@@ -114,7 +114,7 @@ Mean CV Score:0.498375
 
 ### Conclusion
 
-The best performing model is Naive Bayes with an accuracy of 0.52, specificity of 0.70, and ROC AUC of 0.51 We recommend 
+The best performing model is Naive Bayes with an accuracy of 0.52, specificity of 0.70, and ROC AUC of 0.51 , I recommend 
 - Collecting more data to enhance model training.
 - Exploring additional feature engineering techniques.
 - Conducting more in-depth hyperparameter tuning for even better performance.
