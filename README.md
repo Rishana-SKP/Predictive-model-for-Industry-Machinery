@@ -1,5 +1,130 @@
 # Predictive-model-for-Industry-Machinery
 
+
+### Introduction
+
+The objective of this project is to predict Failure_Maintenance_Indicator using machine learning models based on the provided dataset received as part of our project under Entri organization. This involves exploring various models, tuning their hyperparameters, and evaluating their performance to identify the best model.
+
+### Data Description
+The dataset consists of 1000 rows and 17 columns, including features such as:
+
+Equipment_ID
+Sensor_1
+Sensor_2
+Sensor_3
+Environmental_Temperature
+Environmental_Humidity
+Production_Volume
+Operating_Hours
+Error_Code
+Equipment_Age
+Power_Consumption
+Voltage_Fluctuations
+Current_Fluctuations
+Vibration_Analysis
+Temperature_Gradients
+Pressure_Levels
+Target variable: Failure_Maintenance_Indicator
+
+### Preprocessing
+
+#### Data preprocessing involved:
+
+Absence of missing values
+Feature selection including SelectKBest,Recursive Feature Elimination,Random Forest & Chi Square. After exploring all the feature selection techniques conluded SelectKBest stands out as the most effective method
+Scaling the data using MinMax Scaler
+
+
+### Modeling
+
+The following models were used:
+
+Logistic Regression
+Decision Tree
+Random Forest
+Support Vector Classifier
+K-Nearest Neighbors
+Multi-Layer Perceptron
+Gradient Boosting
+Naive Bayes
+
+Hyperparameters were tuned using GridSearchCV with specific grids for each model.
+
+
+### Evaluation
+Evaluation Metrics:
+
+Accuracy: Overall accuracy of the model.
+Confusion Matrix: Breakdown of true positives, true negatives, false positives, and false negatives.
+Classification Report: Precision, recall, F1-score for each class.
+ROC AUC Score: Area under the ROC curve.
+Specificity: Proportion of true negatives.
+
+The evaluation metrics for each model are as follows:
+##### Logistic Regression:
+Accuracy: 0.5050
+Specificity: 1.000000
+ROC AUC Score:0.513024
+Mean CV Score:0.510750	
+
+##### Decision Tree Classifier:
+Accuracy: 0.5100
+Specificity: 0.366337
+ROC AUC Score:0.515340
+Mean CV Score:0.499125	
+
+##### Random Forest Classifier:
+Accuracy:0.5005
+Specificity: 0.560396
+ROC AUC Score:0.499328
+Mean CV Score:0.493750	
+
+
+##### K-Nearest Neighbors:
+Accuracy:0.4860
+Specificity:0.505941
+ROC AUC Score:0.489616
+Mean CV Score:0.500000
+
+##### Naive Bayes:
+Accuracy:0.5240
+Specificity:0.7089
+ROC AUC Score:0.517923
+Mean CV Score:0.509125
+
+
+##### Support Vector Classifier:
+Accuracy:0.5040
+Specificity:0.7950
+ROC AUC Score:0.51460
+Mean CV Score:0.510750
+
+##### Gradient Boosting:
+Accuracy:0.5040
+Specificity:0.7950
+ROC AUC Score:0.508986
+Mean CV Score:0.509250
+
+##### MLP Classifier:
+Accuracy:0.5010
+Specificity:0.631683
+ROC AUC Score:0.514430
+Mean CV Score:0.498375
+
+
+### Conclusion
+
+The best performing model is Naive Bayes with an accuracy of 0.52, specificity of 0.70, and ROC AUC of 0.51 We recommend 
+- Collecting more data to enhance model training.
+- Exploring additional feature engineering techniques.
+- Conducting more in-depth hyperparameter tuning for even better performance.
+
+
+
+
+
+
+
 ### Classification Algorithms: A Comprehensive Overview
 
 In machine learning, classification algorithms play a crucial role in predicting categorical outcomes based on input features. These algorithms analyze labeled training data to learn patterns and relationships between input variables and their corresponding classes. Here, we'll explore seven popular classification algorithms in detail.
