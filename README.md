@@ -125,6 +125,7 @@ The best performing model is Naive Bayes with an accuracy of 0.52, specificity o
 
 
 
+
 ### Classification Algorithms: A Comprehensive Overview
 
 In machine learning, classification algorithms play a crucial role in predicting categorical outcomes based on input features. These algorithms analyze labeled training data to learn patterns and relationships between input variables and their corresponding classes. Here, we'll explore seven popular classification algorithms in detail.
